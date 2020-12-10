@@ -1,0 +1,32 @@
+
+<h2>Restaurant Details</h2> 
+
+<hr/>
+<div *ngIf="restaurant">
+  <div>
+    <label><b>Restaurant Name : </b></label> {{restaurant.name}}
+  </div>
+  <div>
+    <label><b>Address : </b></label> {{restaurant.address}}
+  </div>
+  <div>
+    <label><b>Contact Detail : </b></label> {{restaurant.phoneNo}}
+  </div> 
+  <div>
+    <label><b>Opening Time : </b></label> {{restaurant.openTime}}
+  </div> 
+  <div>
+    <label><b>Closing Time : </b></label> {{restaurant.closeTime}}
+  </div>  
+</div>
+<div>
+  <label><b>Status: </b></label> {{restaurant.active}}
+</div> 
+<div>
+  <label><b>Last Modified Date : </b></label> {{restaurant.lastModifiedDate}}
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Restaurant List</button><br> 
+
